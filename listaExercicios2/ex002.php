@@ -1,16 +1,19 @@
 <?php 
 
 $cont = 0;
-$numero = 1;
+$numero = 0;
 
 while ($cont <= 100) {
-	echo($numero);
-	$numero += 1;
-	$cont++;
-	if (numero % 10 == 0) {
-		echo("Multiplo de 10!");
+	if ($numero % 10 == 0) {
+		echo("$numero <br/>");
+		echo("Multiplo de 10! <br/>");
 
-	}	
+	}
+	else{
+		echo("$numero <br/>");
+	}
+	$numero++;
+	$cont++;
 }
 
 
